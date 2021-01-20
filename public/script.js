@@ -12,7 +12,7 @@ var peer = new Peer(undefined, {
   // host: "/",
   // port: "3030",
 
-  host:'peerjs-server.herokuapp.com', 
+  host:"/", 
   secure:true,
   path: "/peerjs", 
   port:"3030"
