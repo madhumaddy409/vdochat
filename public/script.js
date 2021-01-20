@@ -7,12 +7,15 @@ const myVideo = document.createElement("video");
 myVideo.muted = true;
 
 var peer = new Peer(undefined, {
-  host:'peerjs-server.herokuapp.com',
-  secure:true,
-  port:3030,
-  path: "/peerjs"
+  
+  // path: "/peerjs",
   // host: "/",
   // port: "3030",
+
+  host:'peerjs-server.herokuapp.com', 
+  secure:true,
+  path: "/peerjs", 
+  port:"3030"
 });
 host:'peerjs-server.herokuapp.com', secure:true, port:443
 let myVideoStream;
