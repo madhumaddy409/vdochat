@@ -17,7 +17,7 @@ var peer = new Peer(undefined, {
   path: "/peerjs", 
   port:"3030"
 });
-host:'peerjs-server.herokuapp.com', secure:true, port:443
+
 let myVideoStream;
 
 var getUserMedia =
