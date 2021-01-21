@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/1.3.1/peerjs.min.js.map"></script>
-    <script src="/socket.io/socket.io.js"></script>
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+    <!-- <script src="http://localhost:3030/socket.io/socket.io.js"></script> -->
+    <script src="https://testvideochatdemo.herokuapp.com:3030/socket.io/socket.io.js"></script>
     <script>
       const ROOM_ID = "<%= roomId %>";
     </script>
@@ -82,5 +84,6 @@
       </div>
     </div>
     <script src="script.js"></script>
+    
   </body>
 </html>

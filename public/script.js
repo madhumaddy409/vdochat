@@ -1,4 +1,5 @@
-const socket = io("/");
+// const socket = io("/");
+const socket = io.connect("http://localhost:3030");
 const chatInputBox = document.getElementById("chat_message");
 const all_messages = document.getElementById("all_messages");
 const main__chat__window = document.getElementById("main__chat__window");
@@ -8,14 +9,14 @@ myVideo.muted = true;
 
 var peer = new Peer(undefined, {
   
-  // path: "/peerjs",
-  // host: "/",
-  // port: "3030",
+  path: "/peerjs",
+  host: "/",
+  port: "3030",
 
-  host:"/", 
-  secure:true,
+  // host:"/", 
+  // secure:true,
   // path: "/peerjs", 
-  port:"3030"
+  // port:"3030"
 });
 
 let myVideoStream;
