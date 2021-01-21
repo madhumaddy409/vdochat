@@ -1,6 +1,6 @@
-// const socket = io("/");
+const socket = io("/");
 // const socket = io.connect("http://localhost:3030");
-const socket = io.connect("https://testvideochatdemo.herokuapp.com");
+
 
 const chatInputBox = document.getElementById("chat_message");
 const all_messages = document.getElementById("all_messages");
@@ -10,10 +10,12 @@ const myVideo = document.createElement("video");
 myVideo.muted = true;
 
 var peer = new Peer(undefined, {
+  host: '/',
+  port: '3030'
   
-  path: "/peerjs",
-  host: "/",
-  port: "3030",
+  // path: "/peerjs"
+  // host: "/",
+  // port: "3030",
 
   // host:"/", 
   // secure:true,
